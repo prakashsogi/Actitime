@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Actitime]" parallel="none">
+  <test name="Regression(failed)" parallel="none">
+    <groups>
+      <run>
+        <include name="All"/>
+        <include name="Create"/>
+        <exclude name="Delete"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.actitime.testcases.At_Create_Report_New">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="testAt_Create_Report"/>
+        </methods>
+      </class> <!-- com.actitime.testcases.At_Create_Report_New -->
+      <class name="com.actitime.testcases.At_Create_User">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actitime.testcases.At_Create_User -->
+      <class name="com.actitime.testcases.At_Create_Task">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actitime.testcases.At_Create_Task -->
+      <class name="com.actitime.testcases.At_Create_Project">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actitime.testcases.At_Create_Project -->
+      <class name="com.actitime.testcases.At_Create_Customer">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actitime.testcases.At_Create_Customer -->
+      <class name="com.actitime.testcases.At_Create_Billingtype">
+        <methods>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actitime.testcases.At_Create_Billingtype -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Actitime] -->

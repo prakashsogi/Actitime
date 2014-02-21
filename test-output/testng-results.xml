@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[opening FireFox Browser]]>
+    </line>
+    <line>
+      <![CDATA[Closing the browser]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30305" started-at="2014-02-20T19:53:32Z" finished-at="2014-02-20T19:54:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30305" started-at="2014-02-20T19:53:32Z" finished-at="2014-02-20T19:54:02Z">
+      <class name="com.actitime.testcases.At_Task_WorkTotal">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.testcases.At_Task_WorkTotal@3eeec5b4]" name="preCondition" is-config="true" duration-ms="21555" started-at="2014-02-21T01:23:32Z" finished-at="2014-02-21T01:23:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[opening FireFox Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="testAt_Task_WorkTotal()[pri:0, instance:com.actitime.testcases.At_Task_WorkTotal@3eeec5b4]" name="testAt_Task_WorkTotal" duration-ms="8335" started-at="2014-02-21T01:23:53Z" finished-at="2014-02-21T01:24:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAt_Task_WorkTotal -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.testcases.At_Task_WorkTotal@3eeec5b4]" name="postCondition" is-config="true" duration-ms="396" started-at="2014-02-21T01:24:01Z" finished-at="2014-02-21T01:24:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- com.actitime.testcases.At_Task_WorkTotal -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

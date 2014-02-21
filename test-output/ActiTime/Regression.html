@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>TestNG:  Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 18 22:52:22 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>1796 seconds (1796379 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Create All </td>
+</tr><tr>
+<td>Excluded groups:</td><td>Delete </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.actitime.testcases.At_Create_Report_New.testAt_Create_Report()'><b>testAt_Create_Report</b><br>Test class: com.actitime.testcases.At_Create_Report_New</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 100.09 seconds
+Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:11:15&apos;
+System info: host: &apos;HP&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_40&apos;
+Session ID: 3e8d567a-1c68-47fd-b764-8be1e7b0b838
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=27.0.1}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at com.actitime.testcases.At_Create_Report_New.testAt_Create_Report(At_Create_Report_New.java:51)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:11:15&apos;
+System info: host: &apos;HP&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_40&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Prakash/AppData/Local/Temp/anonymous6265198924056582576webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:8179)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Prakash/AppData/Local/Temp/anonymous6265198924056582576webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10814)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Prakash/AppData/Local/Temp/anonymous6265198924056582576webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Prakash/AppData/Local/Temp/anonymous6265198924056582576webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:396)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace837441023", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace837441023'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 100.09 seconds
+Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:11:15&apos;
+System info: host: &apos;HP&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_40&apos;
+Session ID: 3e8d567a-1c68-47fd-b764-8be1e7b0b838
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=27.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at com.actitime.testcases.At_Create_Report_New.testAt_Create_Report(At_Create_Report_New.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.39.0&apos;, revision: &apos;ff23eac&apos;, time: &apos;2013-12-16 16:11:15&apos;
+System info: host: &apos;HP&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.7.0_40&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Prakash/AppData/Local/Temp/anonymous6265198924056582576webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:8179)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Prakash/AppData/Local/Temp/anonymous6265198924056582576webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10814)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Prakash/AppData/Local/Temp/anonymous6265198924056582576webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10831)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Prakash/AppData/Local/Temp/anonymous6265198924056582576webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:396)
+</pre></div></td>
+<td>131</td>
+<td>com.actitime.testcases.At_Create_Report_New@605036e8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.actitime.testcases.At_Create_Billingtype.testAt_Create_Billingtype()'><b>testAt_Create_Billingtype</b><br>Test class: com.actitime.testcases.At_Create_Billingtype</td>
+<td></td>
+<td>10</td>
+<td>com.actitime.testcases.At_Create_Billingtype@4932f4f0</td></tr>
+<tr>
+<td title='com.actitime.testcases.At_Create_Customer.testAt_Create_Customer()'><b>testAt_Create_Customer</b><br>Test class: com.actitime.testcases.At_Create_Customer</td>
+<td></td>
+<td>415</td>
+<td>com.actitime.testcases.At_Create_Customer@1b54a291</td></tr>
+<tr>
+<td title='com.actitime.testcases.At_Create_Project.testAt_Create_Project()'><b>testAt_Create_Project</b><br>Test class: com.actitime.testcases.At_Create_Project</td>
+<td></td>
+<td>409</td>
+<td>com.actitime.testcases.At_Create_Project@15b3bfc5</td></tr>
+<tr>
+<td title='com.actitime.testcases.At_Create_Task.testAt_Create_Task()'><b>testAt_Create_Task</b><br>Test class: com.actitime.testcases.At_Create_Task</td>
+<td></td>
+<td>27</td>
+<td>com.actitime.testcases.At_Create_Task@1180c894</td></tr>
+<tr>
+<td title='com.actitime.testcases.At_Create_User.testAt_Create_User()'><b>testAt_Create_User</b><br>Test class: com.actitime.testcases.At_Create_User</td>
+<td></td>
+<td>521</td>
+<td>com.actitime.testcases.At_Create_User@3244eabe</td></tr>
+</table><p>
+</body>
+</html>

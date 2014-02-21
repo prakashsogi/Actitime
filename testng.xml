@@ -1,0 +1,29 @@
+
+<suite name="Actitime" parallel="none">
+  <test name="Regression">
+  <groups>
+  <run>
+  <include name="All"/>
+ <include name="Create"/>
+ <exclude name="Delete"/>
+  </run>
+  </groups>
+    <classes>
+      
+      <class name="com.actitime.testcases.At_Create_User"/>
+      <class name="com.actitime.testcases.At_Create_Customer"/>
+      <class name="com.actitime.testcases.At_Create_Project"/>
+      <class name="com.actitime.testcases.At_Create_Billingtype"/>
+      <class name="com.actitime.testcases.At_Create_Task"/>
+      <class name="com.actitime.testcases.At_Create_Report_New"/>
+      <class name="com.actitime.testcases.At_Delete_Report"/>
+      <class name="com.actitime.testcases.At_Delete_Task"/>
+      <class name="com.actitime.testcases.At_Delete_Billingtype"/>
+      <class name="com.actitime.testcases.At_Delete_Project"/>
+      <class name="com.actitime.testcases.At_Delet_Customer"/>
+      <class name="com.actitime.testcases.At_Delete_User"/>
+      <class name="com.actitime.testcases.At_Send_Question"/>
+   <!--   <class name="com.actitime.testcases.At_Delete_Project"/>-->
+    </classes>
+  </test> <!-- Regression -->
+</suite> <!-- Actitime -->
